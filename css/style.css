@@ -1,0 +1,19 @@
+
+.player,.vs,.computer
+{
+    font-size: 60px;
+}
+
+.color-red
+{
+    color: brown;
+}
+.color-green
+{
+    color: forestgreen;
+}
+.color-blue
+{
+    color: dodgerblue;
+}
+

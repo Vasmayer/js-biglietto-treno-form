@@ -17,3 +17,20 @@ const offertaOutput = document.getElementById('offerta');
 const carrozzaOutput = document.getElementById('carrozza');
 const codiceOutput = document.getElementById('codice');
 const costoOutput = document.getElementById('costo');
+
+
+generaButton.addEventListener('click',function()
+{
+    
+
+});
+annullaButton.addEventListener('click',function()
+{
+    nomecognomeInput.value='';
+    kmInput.value='';
+    ageInput.value = '';
+    offertaOutput.value='----';
+    carrozzaOutput.value='----'
+    codiceOutput.value='----'
+    costoOutput.value='----'
+});

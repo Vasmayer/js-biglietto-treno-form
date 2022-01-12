@@ -7,5 +7,13 @@ Il recap dei dati e l'output del prezzo finale va stampato in pagina (formattato
 BONUS:
 replicare anche lo stile estetico fornito dallo screenshot tramite CSS */
 
+/* prendo gli elementi che mi servono */
 const generaButton = document.getElementById('genera');
-const annullaButton = document.getElementById('genera');
+const annullaButton = document.getElementById('annulla');
+const nomecognomeInput = document.getElementById('nomecognome');
+const kmInput = document.getElementById('km');
+const ageInput = document.getElementById('age');
+const offertaOutput = document.getElementById('offerta');
+const carrozzaOutput = document.getElementById('carrozza');
+const codiceOutput = document.getElementById('codice');
+const costoOutput = document.getElementById('costo');

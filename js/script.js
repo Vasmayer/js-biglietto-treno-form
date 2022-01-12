@@ -39,12 +39,12 @@ generaButton.addEventListener('click',function()
     {
         costo = 0.21 * km;
 
-        if(age < 18)
+        if(age === 1)
         {
             costo -=  ( costo * 20 )/100
             message = 'Biglietto Scontato';
         }
-        if(age > 65)
+        if(age === 3 )
         {
             costo -=  ( costo * 40 )/100
             message = 'Biglietto Scontato';

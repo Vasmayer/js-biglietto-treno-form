@@ -8,8 +8,13 @@ BONUS:
 replicare anche lo stile estetico fornito dallo screenshot tramite CSS */
 
 /* prendo gli elementi che mi servono */
+
+
 const generaButton = document.getElementById('genera');
 const annullaButton = document.getElementById('annulla');
+generaButton.style.color = '#B91450'
+annullaButton.style.color = '#B91450'
+
 const nomecognomeInput = document.getElementById('nomecognome');
 const kmInput = document.getElementById('km');
 const ageInput = document.getElementById('age');

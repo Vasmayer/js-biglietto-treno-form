@@ -17,10 +17,48 @@ const offertaOutput = document.getElementById('offerta');
 const carrozzaOutput = document.getElementById('carrozza');
 const codiceOutput = document.getElementById('codice');
 const costoOutput = document.getElementById('costo');
+const nomeOutput = document.getElementById('nome');
 
 
 generaButton.addEventListener('click',function()
 {
+    
+    const km =  parseInt(kmInput.value);    
+    const age = parseInt(ageInput.value);
+
+    console.log(km,age);
+    let costo = 0;
+    let message = 'Biglietto Standard';
+
+    if(!isNaN(km) && !isNaN(age))
+    {
+        costo = 0.21 * km;
+
+        if(age < 18)
+        {
+            costo -=  ( costo * 20 )/100
+            message = 'Biglietto Scontato';
+        }
+        if(age > 65)
+        {
+            costo -=  ( costo * 40 )/100
+            message = 'Biglietto Scontato';
+        }
+    }
+    
+    if(costo)
+    {
+        offertaOutput.innerText = message;
+        carrozzaOutput.innerText= Math.floor( Math.random() * 20 + 1);
+        codiceOutput.innerText = Math.random().toString(36).substr(2, 5);
+        costoOutput.innerText=`${costo.toFixed(2)} €`;
+        nomeOutput.innerText = nomecognomeInput.value;
+    }
+    else
+    {
+      alert('Inserisci i dati corretti!');
+    }
+
     
 
 });
@@ -29,8 +67,9 @@ annullaButton.addEventListener('click',function()
     nomecognomeInput.value='';
     kmInput.value='';
     ageInput.value = '';
-    offertaOutput.value='----';
-    carrozzaOutput.value='----'
-    codiceOutput.value='----'
-    costoOutput.value='----'
+    offertaOutput.innerText = '----';
+    carrozzaOutput.innerText= '----';
+    codiceOutput.innerText = '----';
+    costoOutput.innerText='----';
+ 
 });

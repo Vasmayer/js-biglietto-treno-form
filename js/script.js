@@ -71,5 +71,6 @@ annullaButton.addEventListener('click',function()
     carrozzaOutput.innerText= '----';
     codiceOutput.innerText = '----';
     costoOutput.innerText='----';
+    nomeOutput.innerText='----';
  
 });
